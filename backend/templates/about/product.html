@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% include 'includes/header.html' %}
+{% block content %}
+
+<div class="container-xxl bg-light my-6 py-6 pt-0">
+    <div class="container">
+        <div class="bg-light text-white rounded-bottom p-5 my-6 mt-0 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 text-white mb-0">TUTTI CLASSIC MUSIC <i class="fa fa-music text-primary" aria-hidden="true"></i></h1>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <p class="text-primary text-uppercase mb-2"></p>
+            <h1 class="display-6 mb-4">Explore The Categories Of Our Bakery Products</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                    <div class="text-center p-4">
+                        <div class="d-inline-block border border-primary rounded-pill px-3 mb-3"></div>
+                        <h3 class="mb-3">TUTTI Сообщество</h3>
+                        <span>Мы собиарем сообщество единомышленников</span>
+                    </div>
+                    <div class="position-relative mt-auto">
+                        <img class="img-fluid" src="{{ url_for('static', path='img/photo-1.jpg') }}" alt="">
+                        <div class="product-overlay">
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-eye text-light"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                    <div class="text-center p-4">
+                        <div class="d-inline-block border border-primary rounded-pill pt-1 px-3 mb-3"></div>
+                        <h3 class="mb-3">TUTTI Бот</h3>
+                        <span>Бот в телеграм, помогающий найти ноты</span>
+                    </div>
+                    <div class="position-relative mt-auto">
+                        <img class="img-fluid" src="{{ url_for('static', path='img/photo-2.jpg') }}" alt="">
+                        <div class="product-overlay">
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-eye text-light"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                    <div class="text-center p-4">
+                        <div class="d-inline-block border border-primary rounded-pill pt-1 px-3 mb-3"></div>
+                        <h3 class="mb-3">TUTTI Приложение</h4>
+                        <span>Наше будущее приложение</span>
+                    </div>
+                    <div class="position-relative mt-auto">
+                        <img class="img-fluid" src="{{ url_for('static', path='img/photo-3.jpg') }}" alt="">
+                        <div class="product-overlay">
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-eye text-light"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Product End -->
+
+{% endblock content %}
